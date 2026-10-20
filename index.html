@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#062b23">
+  <meta name="description" content="World Imports: perfumes, bebidas, cama, mesa, banho e produtos importados para sua casa.">
+  <title>World Imports | Produtos do mundo, na sua casa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    O MUNDO INTEIRO DE POSSIBILIDADES, PERTO DE VOCÊ
+  </div>
+
+  <header class="header">
+    <div class="header-main container">
+      <a href="#" class="brand" aria-label="World Imports, página inicial">
+        <span class="brand-symbol">✧</span>
+        <span class="brand-name">WORLD IMPORTS</span>
+        <span class="brand-tagline">PRODUTOS DO MUNDO, NA SUA CASA</span>
+      </a>
+
+      <form class="search-box" id="search-form">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="O que você está procurando?"
+          aria-label="Pesquisar produtos"
+        >
+        <button type="submit" aria-label="Pesquisar">⌕</button>
+      </form>
+
+      <div class="header-actions">
+        <button class="icon-button" id="favorites-button" aria-label="Ver favoritos">
+          ♡ <span class="action-label">Favoritos</span>
+        </button>
+        <button class="icon-button cart-trigger" id="cart-button" aria-label="Abrir carrinho">
+          ♧ <span class="action-label">Carrinho</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="navigation">
+      <div class="container nav-inner">
+        <a href="#produtos" data-category="Todos">Todos os produtos</a>
+        <a href="#produtos" data-category="Perfumes">Perfumes</a>
+        <a href="#produtos" data-category="Bebidas">Bebidas</a>
+        <a href="#produtos" data-category="Cama, Mesa e Banho">Cama, Mesa e Banho</a>
+        <a href="#produtos" data-category="Variedade">Variedade</a>
+        <a href="#ofertas" class="nav-offer">Ofertas especiais</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow">UMA EXPERIÊNCIA EXCLUSIVA</span>
+        <h1>O mundo ao seu alcance.<br><em>Elegância em cada detalhe.</em></h1>
+        <p>Produtos importados, marcas desejadas e escolhas que transformam o seu dia a dia.</p>
+        <a href="#produtos" class="button button-gold">EXPLORE A COLEÇÃO <span>→</span></a>
+      </div>
+      <div class="hero-note">WORLD IMPORTS · CURADORIA ESPECIAL</div>
+    </section>
+
+    <section class="categories section container">
+      <div class="section-heading">
+        <span class="eyebrow">DESCUBRA O NOSSO UNIVERSO</span>
+        <h2>Escolha a sua experiência</h2>
+        <p>Pequenos detalhes fazem toda a diferença.</p>
+      </div>
+
+      <div class="category-grid">
+        <button class="category-card active" data-category="Todos">
+          <span class="category-icon">✧</span>
+          <strong>Todos os produtos</strong>
+          <small>Descubra tudo</small>
+        </button>
+        <button class="category-card" data-category="Perfumes">
+          <span class="category-icon">♧</span>
+          <strong>Perfumes</strong>
+          <small>Uma marca pessoal</small>
+        </button>
+        <button class="category-card" data-category="Bebidas">
+          <span class="category-icon">♜</span>
+          <strong>Bebidas</strong>
+          <small>Momentos especiais</small>
+        </button>
+        <button class="category-card" data-category="Cama, Mesa e Banho">
+          <span class="category-icon">⌂</span>
+          <strong>Cama, mesa e banho</strong>
+          <small>Conforto para o lar</small>
+        </button>
+        <button class="category-card" data-category="Variedade">
+          <span class="category-icon">◇</span>
+          <strong>Variedade</strong>
+          <small>Surpreenda-se</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="featured section" id="ofertas">
+      <div class="container featured-layout">
+        <div class="featured-copy">
+          <span class="eyebrow">SELEÇÃO WORLD IMPORTS</span>
+          <h2>Mais do que produtos,<br><em>um estilo de vida.</em></h2>
+          <p>Encontre os detalhes que tornam os seus momentos mais especiais. Qualidade, sofisticação e variedade em um só lugar.</p>
+          <a href="#produtos" class="button button-gold">COMPRAR AGORA <span>→</span></a>
+          <div class="featured-caption">UMA SELEÇÃO FEITA PARA VOCÊ</div>
+        </div>
+        <div class="featured-image">
+          <img
+            src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1100&q=85"
+            alt="Perfume sofisticado em ambiente elegante"
+          >
+          <div class="image-caption">
+            <span>ESSÊNCIA & PERSONALIDADE</span>
+            <strong>O luxo está nos detalhes.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section container" id="produtos">
+      <div class="section-heading product-heading">
+        <div>
+          <span class="eyebrow">ESCOLHAS ESPECIAIS</span>
+          <h2>Nossa seleção</h2>
+          <p>Produtos que merecem um lugar na sua vida.</p>
+        </div>
+        <label class="sort-control">
+          <span>Ordenar por</span>
+          <select id="sort-select">
+            <option value="featured">Destaques</option>
+            <option value="price-low">Menor preço</option>
+            <option value="price-high">Maior preço</option>
+            <option value="name">Nome</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-button active" data-category="Todos">Todos</button>
+        <button class="filter-button" data-category="Perfumes">Perfumes</button>
+        <button class="filter-button" data-category="Bebidas">Bebidas</button>
+        <button class="filter-button" data-category="Cama, Mesa e Banho">Cama, mesa e banho</button>
+        <button class="filter-button" data-category="Variedade">Variedade</button>
+      </div>
+
+      <div class="product-grid" id="product-grid">
+        <!-- Os produtos são inseridos pelo JavaScript. -->
+      </div>
+      <p class="empty-message" id="empty-message" hidden>Nenhum produto encontrado. Tente outra pesquisa.</p>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefits-grid">
+        <article class="benefit">
+          <span class="benefit-icon">♧</span>
+          <div><strong>Compra segura</strong><p>Uma experiência de compra tranquila.</p></div>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon">↗</span>
+          <div><strong>Entrega para você</strong><p>Consulte as opções para sua região.</p></div>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon">◇</span>
+          <div><strong>Seleção especial</strong><p>Variedade para diferentes momentos.</p></div>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon">♡</span>
+          <div><strong>Atendimento próximo</strong><p>Conte com a nossa equipe.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter section">
+      <div class="container newsletter-inner">
+        <span class="eyebrow">UM CONVITE ESPECIAL</span>
+        <h2>Descubra o que o mundo tem de melhor.</h2>
+        <p>Acompanhe novidades, produtos e oportunidades especiais.</p>
+        <a class="button button-dark" id="newsletter-button" href="#">QUERO SABER DAS NOVIDADES <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <span class="brand-symbol">✧</span>
+          <span class="brand-name">WORLD IMPORTS</span>
+          <span class="brand-tagline">PRODUTOS DO MUNDO, NA SUA CASA</span>
+        </a>
+        <p>Mais do que produtos, um estilo de vida.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="#produtos">Todos os produtos</a>
+        <a href="#produtos" data-category="Perfumes">Perfumes</a>
+        <a href="#produtos" data-category="Bebidas">Bebidas</a>
+        <a href="#produtos" data-category="Cama, Mesa e Banho">Casa e conforto</a>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <a href="#" id="footer-contact">Fale conosco</a>
+        <a href="#produtos">Como comprar</a>
+        <a href="#produtos">Nossos produtos</a>
+      </div>
+      <div>
+        <h3>World Imports</h3>
+        <p>Produtos do mundo,<br>na sua casa.</p>
+        <p class="footer-small">© <span id="year"></span> World Imports. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Seu carrinho" aria-hidden="true">
+    <div class="drawer-header">
+      <div><span class="eyebrow">WORLD IMPORTS</span><h2>Seu carrinho</h2></div>
+      <button class="close-drawer" id="close-cart" aria-label="Fechar carrinho">×</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><strong id="cart-total">R$ 0,00</strong></div>
+      <button class="button button-dark checkout-button" id="checkout-button">FINALIZAR PELO WHATSAPP →</button>
+      <p>O pedido será encaminhado para confirmação pelo atendimento.</p>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
